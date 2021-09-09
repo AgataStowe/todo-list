@@ -1,0 +1,16 @@
+<div class="form">
+
+  <div class="todo-item">
+      <input type="checkbox" [ngModel]="item.completed" class="todo-checkbox" (click)="completeItem()"/>
+      <p class="todo-title" [ngClass]="{'todo-complete': item.completed}">
+          {{ item.title }}
+        </p>
+      <button class="btn btn-red" (click)="removeItem()">
+         remove
+      </button>
+      <!-- <button class="btn btn-blue" (click)="removeItem()">
+          editar
+       </button> -->
+  </div>
+</div>
+
