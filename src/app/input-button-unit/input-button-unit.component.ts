@@ -8,7 +8,7 @@ import { TodoItemComponent } from '../todo-item/todo-item.component';
   styleUrls: ['./input-button-unit.component.css']
 })
 export class InputButtonUnitComponent implements OnInit {
-  title: TodoItem = null;
+  title: string = null;
   @Output() submit: EventEmitter<string> = new EventEmitter();
 
   constructor() { }
